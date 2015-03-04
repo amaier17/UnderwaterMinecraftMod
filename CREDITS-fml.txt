@@ -1,5 +1,3 @@
-I MADE MINECRAFT
-
 This is Forge Mod Loader.
 
 You can find the source code at all times at https://github.com/MinecraftForge/FML
