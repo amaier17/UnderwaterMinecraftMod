@@ -1,0 +1,35 @@
+[18:35:00] [Client thread/INFO]: Setting user: Player947
+[18:35:02] [Client thread/INFO]: LWJGL Version: 2.9.1
+[18:35:03] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:UnderwaterMod
+[18:35:04] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:35:04] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[18:35:04] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:35:04] [Thread-7/INFO]: OpenAL initialized.
+[18:35:04] [Sound Library Loader/INFO]: Sound engine started
+[18:35:07] [Client thread/INFO]: Created: 512x512 textures-atlas
+[18:35:07] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:UnderwaterMod
+[18:35:07] [Client thread/INFO]: SoundSystem shutting down...
+[18:35:08] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[18:35:08] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:35:08] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[18:35:08] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:35:08] [Thread-9/INFO]: OpenAL initialized.
+[18:35:08] [Sound Library Loader/INFO]: Sound engine started
+[18:35:10] [Client thread/INFO]: Created: 512x512 textures-atlas
+[18:35:15] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[18:35:15] [Server thread/INFO]: Generating keypair
+[18:35:15] [Server thread/INFO]: Preparing start region for level 0
+[18:35:17] [Server thread/INFO]: Changing view distance to 12, from 10
+[18:35:17] [Server thread/INFO]: Player947[local:E:de759b1c] logged in with entity id 355 at (110.5, 64.0, 250.5)
+[18:35:17] [Server thread/INFO]: Player947 joined the game
+[18:35:35] [Server thread/INFO]: Player947 has just earned the achievement [Taking Inventory]
+[18:35:35] [Client thread/INFO]: [CHAT] Player947 has just earned the achievement [Taking Inventory]
+[18:36:02] [Client thread/INFO]: Stopping!
+[18:36:02] [Client thread/INFO]: SoundSystem shutting down...
+[18:36:02] [Server thread/INFO]: Stopping server
+[18:36:02] [Server thread/INFO]: Saving players
+[18:36:02] [Server thread/INFO]: Saving worlds
+[18:36:02] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[18:36:02] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[18:36:02] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[18:36:02] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
