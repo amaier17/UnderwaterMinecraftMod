@@ -7,6 +7,7 @@ import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.underwater.mod.Reference;
+import net.underwater.mod.UnderwaterMod;
 
 public class ModItem extends Item {
 	
@@ -18,7 +19,9 @@ public class ModItem extends Item {
 	}
 	
 	public ModItem() {
+		super();
 		items.add(this);
+		this.setCreativeTab(UnderwaterMod.tab);
 	}
 	
 	public static void registerModItem() {
@@ -27,9 +30,9 @@ public class ModItem extends Item {
 		}
 	}
 	
-	public static void registerRenderModItem() {
+	public static void registerRendersModItem() {
 		for(ModItem i : items) {
-			Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(i, 0,new ModelResourceLocation(Reference.modid + ":" + i.getUnlocalizedName().substring(5)));
+			Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(i, 0,new ModelResourceLocation(Reference.modid + ":" + i.getUnlocalizedName().substring(5),"inventory"));
 		}
 	}
 }
