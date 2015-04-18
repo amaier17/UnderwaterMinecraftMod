@@ -13,6 +13,8 @@ public class UnderwaterModItems extends Item{
 	
 	public static Item copperingot;
 	public static ItemArmor bucket_helmet;
+	public static Item scubahelmet;
+	public static Item scubahelmetwglass;
 	
 	public static void register() {
 		ModItem.registerModItem();
@@ -22,6 +24,8 @@ public class UnderwaterModItems extends Item{
 		copperingot = new ModItem("copperingot");
 		bucket_helmet = new BucketHelmet("buckethelmet");
 		ModItem.RegisterArmor(bucket_helmet);
+		scubahelmet = new ModItem("scubahelmet");
+		scubahelmetwglass = new ModItem("scubahelmetwglass");
 	}
 	
 	public static void registerRenders() {

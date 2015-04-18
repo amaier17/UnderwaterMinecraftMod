@@ -13,7 +13,7 @@ public class UnderwaterTab extends CreativeTabs{
 
 	@Override
 	public Item getTabIconItem() {
-		return UnderwaterModItems.copperingot;
+		return UnderwaterModItems.scubahelmetwglass;
 	}
 
 }
