@@ -1,31 +1,31 @@
-[19:38:28] [Client thread/INFO]: Setting user: Player394
-[19:38:30] [Client thread/INFO]: LWJGL Version: 2.9.1
-[19:38:32] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:UnderwaterMod
-[19:38:32] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[19:38:32] [Thread-7/INFO]: Initializing LWJGL OpenAL
-[19:38:32] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[19:38:32] [Thread-7/INFO]: OpenAL initialized.
-[19:38:33] [Sound Library Loader/INFO]: Sound engine started
-[19:38:35] [Client thread/INFO]: Created: 512x512 textures-atlas
-[19:38:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:UnderwaterMod
-[19:38:35] [Client thread/INFO]: SoundSystem shutting down...
-[19:38:36] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[19:38:36] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[19:38:36] [Thread-9/INFO]: Initializing LWJGL OpenAL
-[19:38:36] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[19:38:36] [Thread-9/INFO]: OpenAL initialized.
-[19:38:36] [Sound Library Loader/INFO]: Sound engine started
-[19:38:38] [Client thread/INFO]: Created: 512x512 textures-atlas
-[19:38:41] [Server thread/INFO]: Starting integrated minecraft server version 1.8
-[19:38:41] [Server thread/INFO]: Generating keypair
-[19:38:42] [Server thread/INFO]: Preparing start region for level 0
-[19:38:43] [Server thread/INFO]: Changing view distance to 12, from 10
-[19:38:43] [Server thread/INFO]: Player394[local:E:9cabc747] logged in with entity id 365 at (110.5, 64.0, 250.5)
-[19:38:43] [Server thread/INFO]: Player394 joined the game
-[19:38:47] [Server thread/INFO]: Player394 has just earned the achievement [Taking Inventory]
-[19:38:47] [Client thread/INFO]: [CHAT] Player394 has just earned the achievement [Taking Inventory]
-[19:38:57] [Client thread/WARN]: Failed to load texture: underwatermod:textures/armor/buckethelmet
-java.io.FileNotFoundException: underwatermod:textures/armor/buckethelmet
+[20:01:00] [Client thread/INFO]: Setting user: Player476
+[20:01:02] [Client thread/INFO]: LWJGL Version: 2.9.1
+[20:01:05] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Underwater Mod
+[20:01:05] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[20:01:05] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[20:01:05] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:01:05] [Thread-7/INFO]: OpenAL initialized.
+[20:01:06] [Sound Library Loader/INFO]: Sound engine started
+[20:01:08] [Client thread/INFO]: Created: 512x512 textures-atlas
+[20:01:09] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Underwater Mod
+[20:01:09] [Client thread/INFO]: SoundSystem shutting down...
+[20:01:09] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[20:01:09] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[20:01:09] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[20:01:09] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[20:01:09] [Thread-9/INFO]: OpenAL initialized.
+[20:01:09] [Sound Library Loader/INFO]: Sound engine started
+[20:01:11] [Client thread/INFO]: Created: 512x512 textures-atlas
+[20:01:41] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[20:01:41] [Server thread/INFO]: Generating keypair
+[20:01:42] [Server thread/INFO]: Preparing start region for level 0
+[20:01:43] [Server thread/INFO]: Changing view distance to 12, from 10
+[20:01:43] [Server thread/INFO]: Player476[local:E:4daaa395] logged in with entity id 365 at (111.27378085821427, 62.0, 245.65121336112816)
+[20:01:43] [Server thread/INFO]: Player476 joined the game
+[20:01:53] [Server thread/INFO]: Player476 has just earned the achievement [Taking Inventory]
+[20:01:53] [Client thread/INFO]: [CHAT] Player476 has just earned the achievement [Taking Inventory]
+[20:02:48] [Client thread/WARN]: Failed to load texture: underwatermod:textures/armor/scubahelmet
+java.io.FileNotFoundException: underwatermod:textures/armor/scubahelmet
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:70) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.renderer.texture.SimpleTexture.loadTexture(SimpleTexture.java:34) ~[SimpleTexture.class:?]
@@ -58,22 +58,20 @@ java.io.FileNotFoundException: underwatermod:textures/armor/buckethelmet
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
 	at GradleStart.main(Unknown Source) [start/:?]
-[19:39:09] [Client thread/INFO]: [CHAT] Saved screenshot as 2015-04-17_19.39.08.png
-[19:39:10] [Client thread/INFO]: [CHAT] Saved screenshot as 2015-04-17_19.39.10.png
-[19:39:36] [Server thread/INFO]: Saving and pausing game...
-[19:39:36] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[19:39:36] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[19:39:36] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[19:39:42] [Server thread/INFO]: Saving and pausing game...
-[19:39:42] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[19:39:42] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[19:39:42] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[19:39:43] [Server thread/INFO]: Stopping server
-[19:39:43] [Server thread/INFO]: Saving players
-[19:39:43] [Server thread/INFO]: Saving worlds
-[19:39:43] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[19:39:43] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[19:39:43] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[19:39:45] [Client thread/INFO]: Stopping!
-[19:39:45] [Client thread/INFO]: SoundSystem shutting down...
-[19:39:45] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[20:03:02] [Server thread/INFO]: Saving and pausing game...
+[20:03:02] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[20:03:02] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[20:03:02] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[20:03:03] [Client thread/INFO]: Stopping!
+[20:03:03] [Client thread/INFO]: SoundSystem shutting down...
+[20:03:03] [Server thread/INFO]: Stopping server
+[20:03:03] [Server thread/INFO]: Saving players
+[20:03:03] [Server thread/INFO]: Saving worlds
+[20:03:03] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[20:03:03] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[20:03:03] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[20:03:03] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[20:03:04] [Client Shutdown Thread/INFO]: Stopping server
+[20:03:04] [Client Shutdown Thread/INFO]: Saving players
+[20:03:04] [Client Shutdown Thread/INFO]: Saving worlds
+[20:03:04] [Client Shutdown Thread/INFO]: Saving chunks for level 'New World'/Overworld
