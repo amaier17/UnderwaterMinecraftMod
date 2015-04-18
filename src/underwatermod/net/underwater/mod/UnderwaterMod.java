@@ -1,5 +1,6 @@
 package net.underwater.mod;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -16,7 +17,7 @@ public class UnderwaterMod {
 
 	@SidedProxy(clientSide = Reference.client_proxy_class, serverSide = Reference.server_proxy_class)
 	public static CommonProxy proxy;
-	
+	public static final UnderwaterTab tab = new UnderwaterTab("tabUnderwater");
 	
 	@EventHandler
 	public void PreInit(FMLPreInitializationEvent preEvent) {
