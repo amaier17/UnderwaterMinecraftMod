@@ -67,7 +67,7 @@ public class ScubaHelmetArmor extends ItemArmor implements ISpecialArmor {
 	
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
-		player.addPotionEffect(new PotionEffect(Potion.blindness.id, 100, 4));
+		player.addPotionEffect(new PotionEffect(Potion.blindness.id, 100, 4000));
 		player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 100, 4));
 	}
 }

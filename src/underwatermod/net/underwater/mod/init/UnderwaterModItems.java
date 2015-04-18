@@ -22,7 +22,7 @@ public class UnderwaterModItems extends Item{
 	public static void init() {
 		copperingot = new ModItem("copperingot");
 		scuba_helmet_w_glass = new ModItem("scubahelmetwglass");
-		scuba_helmet = new ScubaHelmetArmor("buckethelmet");
+		scuba_helmet = new ScubaHelmetArmor("scubahelmet");
 		ModItem.RegisterArmor(scuba_helmet);
 	}
 	
