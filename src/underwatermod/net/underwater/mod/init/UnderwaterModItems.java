@@ -10,6 +10,8 @@ import net.underwater.mod.items.ModItem;
 public class UnderwaterModItems extends Item{
 	
 	public static Item copperingot;
+	public static Item scubahelmet;
+	public static Item scubahelmetwglass;
 	
 	public static void register() {
 		ModItem.registerModItem();
@@ -17,6 +19,8 @@ public class UnderwaterModItems extends Item{
 	
 	public static void init() {
 		copperingot = new ModItem("copperingot");
+		scubahelmet = new ModItem("scubahelmet");
+		scubahelmetwglass = new ModItem("scubahelmetwglass");
 	}
 	
 	public static void registerRenders() {
