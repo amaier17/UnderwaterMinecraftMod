@@ -16,9 +16,9 @@ import net.minecraftforge.common.ISpecialArmor;
 import net.underwater.mod.Reference;
 import net.underwater.mod.UnderwaterMod;
 
-public class BucketHelmet extends ItemArmor implements ISpecialArmor {
+public class ScubaHelmetArmor extends ItemArmor implements ISpecialArmor {
 	
-	public BucketHelmet(String name) {
+	public ScubaHelmetArmor(String name) {
 		//armor type 0 is helmet
 		super(ArmorMaterial.IRON, 1, 0);
 		this.setCreativeTab(UnderwaterMod.tab);
@@ -67,6 +67,7 @@ public class BucketHelmet extends ItemArmor implements ISpecialArmor {
 	
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
-		player.addPotionEffect(new PotionEffect(Potion.blindness.id, 500, 4));
+		player.addPotionEffect(new PotionEffect(Potion.blindness.id, 100, 4));
+		player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 100, 4));
 	}
 }

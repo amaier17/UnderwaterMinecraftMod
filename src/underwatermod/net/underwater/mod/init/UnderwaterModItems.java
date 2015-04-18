@@ -6,15 +6,14 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.underwater.mod.Reference;
-import net.underwater.mod.items.BucketHelmet;
+import net.underwater.mod.items.ScubaHelmetArmor;
 import net.underwater.mod.items.ModItem;
 
 public class UnderwaterModItems extends Item{
 	
 	public static Item copperingot;
-	public static ItemArmor bucket_helmet;
-	public static Item scubahelmet;
-	public static Item scubahelmetwglass;
+	public static ItemArmor scuba_helmet;
+	public static Item scuba_helmet_w_glass;
 	
 	public static void register() {
 		ModItem.registerModItem();
@@ -22,10 +21,9 @@ public class UnderwaterModItems extends Item{
 	
 	public static void init() {
 		copperingot = new ModItem("copperingot");
-		bucket_helmet = new BucketHelmet("buckethelmet");
-		ModItem.RegisterArmor(bucket_helmet);
-		scubahelmet = new ModItem("scubahelmet");
-		scubahelmetwglass = new ModItem("scubahelmetwglass");
+		scuba_helmet = new ScubaHelmetArmor("scubahelmet");
+		ModItem.RegisterArmor(scuba_helmet);
+		scuba_helmet_w_glass = new ModItem("scubahelmetwglass");
 	}
 	
 	public static void registerRenders() {
