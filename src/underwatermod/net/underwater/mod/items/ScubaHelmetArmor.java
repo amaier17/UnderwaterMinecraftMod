@@ -7,20 +7,24 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ISpecialArmor;
+import net.minecraftforge.common.util.EnumHelper;
 import net.underwater.mod.Reference;
 import net.underwater.mod.UnderwaterMod;
 
 public class ScubaHelmetArmor extends ItemArmor implements ISpecialArmor {
+
+	public static ArmorMaterial ArmorMat = EnumHelper.addArmorMaterial("armMat_scubahelmet", Reference.modid + ":scubahelmet", 10, new int[] {1,1,1,1}, 15);
 	
 	public ScubaHelmetArmor(String name) {
 		//armor type 0 is helmet
-		super(ArmorMaterial.IRON, 1, 0);
+		super(ArmorMat, 1, 0);
 		this.setCreativeTab(UnderwaterMod.tab);
 		this.setUnlocalizedName(name);
 	}
@@ -47,18 +51,6 @@ public class ScubaHelmetArmor extends ItemArmor implements ISpecialArmor {
 			stack.damageItem(damage * 2, entity);
 		}
 	}
-	
-	@Override
-	public String getArmorTexture(ItemStack armor, Entity entity, int slot, String type) {
-		return Reference.modid + ":textures/armor/" + this.getUnlocalizedName().substring(5);
-	}
-	
-	/*
-	@Override
-	public CreativeTabs[] getCreativeTabs() {
-		return new CreativeTabs[] { UnderwaterMod.tab };
-	}
-	*/
 	
 	@Override
 	public boolean getIsRepairable(ItemStack armor, ItemStack stack) {
