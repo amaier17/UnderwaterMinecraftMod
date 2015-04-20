@@ -10,6 +10,9 @@ Desktop.ini
 .project
 build.gradle
 
+#minecraft files
+usernamecache.json
+
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 eclipse/
