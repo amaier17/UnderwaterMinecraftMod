@@ -1,5 +1,6 @@
 package net.underwater.mod.items;
 
+import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
@@ -34,13 +35,13 @@ public class ModItemWetHelmet extends ItemArmor implements PlayerTickHandler.IPl
 		if (data.hasKey("playerInWater")) {
 			playerInWater = data.getBoolean("playerInWater");
 		}
-		if (player.isInWater() != playerInWater) {
-			if (player.isInWater()) {
+		if (player.isInsideOfMaterial(Material.water) != playerInWater) {
+			if (player.isInsideOfMaterial(Material.water)) {
 				this.onWaterEnter(world, player, armor);
 			} else {
 				onWaterExit(world, player, armor);
 			}
-			data.setBoolean("playerInWater", player.isInWater());
+			data.setBoolean("playerInWater", player.isInsideOfMaterial(Material.water));
 		}
 	}
 	
