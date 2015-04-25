@@ -5,6 +5,7 @@ import java.util.Map;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
@@ -14,6 +15,8 @@ import net.underwater.mod.items.ModItem;
 
 public class UWPickaxe extends ItemPickaxe {
 
+	private float digModifier = 1f;
+	
 	public UWPickaxe(ToolMaterial material, String name) {
 		super(material);
 		ModItem.RegisterOddItem(this);
@@ -22,14 +25,20 @@ public class UWPickaxe extends ItemPickaxe {
 	}
 	
 	@Override
-	public void onCreated(ItemStack stack, World worldIn, EntityPlayer playerIn) {
-		stack.addEnchantment(Enchantment.aquaAffinity, 1);
-	}
+	public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
+    {
+		if (isSelected) {
+			if (entityIn.isInWater()) {
+				this.digModifier = 5;
+			} else {
+				this.digModifier = 1;
+			}
+		}
+    }
 	
 	@Override
-	public void onUsingTick(ItemStack stack, EntityPlayer player, int count)
-    {
-		stack.addEnchantment(Enchantment.aquaAffinity, 1);
-    }
+	public float getDigSpeed(ItemStack itemstack, net.minecraft.block.state.IBlockState state) {
+		return super.getDigSpeed(itemstack, state) * this.digModifier;
+	}
 	
 }
