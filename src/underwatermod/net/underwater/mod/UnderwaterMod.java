@@ -5,6 +5,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -23,6 +24,9 @@ public class UnderwaterMod {
 	@SidedProxy(clientSide = Reference.client_proxy_class, serverSide = Reference.server_proxy_class)
 	public static CommonProxy proxy;
 	public static final UnderwaterTab tab = new UnderwaterTab("tabUnderwater");
+	
+	@Instance(Reference.modid)
+	public static UnderwaterMod instance;
 	
 	@EventHandler
 	public void PreInit(FMLPreInitializationEvent preEvent) {
