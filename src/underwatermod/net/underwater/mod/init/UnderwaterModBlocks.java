@@ -8,13 +8,17 @@ import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.underwater.mod.Reference;
 import net.underwater.mod.blocks.ModBlock;
+import net.underwater.mod.blocks.StoneBench;
 
 public class UnderwaterModBlocks {
 
 	public static Block copperblock;
+	public static Block stoneBench;
+	public static final int guiIDStoneBench = 1;
 	
 	public static void init() {
 		copperblock = new ModBlock(Material.rock,"copperblock");
+		stoneBench = new StoneBench("stonebench");
 	}
 	
 	public static void register() {
