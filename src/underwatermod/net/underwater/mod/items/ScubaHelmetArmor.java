@@ -18,7 +18,7 @@ import net.minecraftforge.common.util.EnumHelper;
 import net.underwater.mod.Reference;
 import net.underwater.mod.UnderwaterMod;
 
-public class ScubaHelmetArmor extends ModItemArmor implements ISpecialArmor {
+public class ScubaHelmetArmor extends ModItemWetHelmet implements ISpecialArmor {
 
 	public static ArmorMaterial ArmorMat = EnumHelper.addArmorMaterial("armMat_scubahelmet", Reference.modid + ":scubahelmet", 10, new int[] {1,1,1,1}, 15);
 	
@@ -57,7 +57,12 @@ public class ScubaHelmetArmor extends ModItemArmor implements ISpecialArmor {
 	
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
-		player.addPotionEffect(new PotionEffect(Potion.blindness.id, 100, 4000));
-		player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 100, 4));
+		super.onArmorTick(world, player, armor);
+		player.addPotionEffect(new PotionEffect(Potion.blindness.id, 30, 4000));
+	}
+	
+	@Override
+	public void onWaterEnter(World world, EntityPlayer player, ItemStack armor) {
+		player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 2400, 4));
 	}
 }

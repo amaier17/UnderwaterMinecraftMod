@@ -19,7 +19,7 @@ import net.minecraftforge.common.util.EnumHelper;
 import net.underwater.mod.Reference;
 import net.underwater.mod.UnderwaterMod;
 
-public class ScubaHelmetGlassGlowstoneArmor extends ModItemArmor implements ISpecialArmor {
+public class ScubaHelmetGlassGlowstoneArmor extends ModItemWetHelmet implements ISpecialArmor {
 	
 	public static ArmorMaterial ArmorMat = EnumHelper.addArmorMaterial("armMat_scubahelmetwglasswglowstone", Reference.modid + ":scubahelmetwglasswglowstone", 10, new int[] {1,1,1,1}, 15);
 	
@@ -57,7 +57,12 @@ public class ScubaHelmetGlassGlowstoneArmor extends ModItemArmor implements ISpe
 	
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
-		player.addPotionEffect(new PotionEffect(Potion.nightVision.id, 100, 4));
-		player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 100, 4));
+		super.onArmorTick(world, player, armor);
+		player.addPotionEffect(new PotionEffect(Potion.nightVision.id, 30, 4));
+	}
+	
+	@Override
+	public void onWaterEnter(World world, EntityPlayer player, ItemStack armor) {
+		player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 2400, 4));
 	}
 }

@@ -5,6 +5,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.DamageSource;
@@ -15,7 +16,7 @@ import net.minecraftforge.common.util.EnumHelper;
 import net.underwater.mod.Reference;
 import net.underwater.mod.UnderwaterMod;
 
-public class ScubaHelmetGlassArmor extends ModItemArmor implements ISpecialArmor {
+public class ScubaHelmetGlassArmor extends ModItemWetHelmet implements ISpecialArmor {
 	
 	public static ArmorMaterial ArmorMat = EnumHelper.addArmorMaterial("armMat_scubahelmetwglass", Reference.modid + ":scubahelmetwglass", 10, new int[] {1,1,1,1}, 15);
 	
@@ -52,7 +53,7 @@ public class ScubaHelmetGlassArmor extends ModItemArmor implements ISpecialArmor
 	}
 	
 	@Override
-	public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
-		player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 100, 4));
+	public void onWaterEnter(World world, EntityPlayer player, ItemStack armor) {
+		player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 2400, 4));
 	}
 }

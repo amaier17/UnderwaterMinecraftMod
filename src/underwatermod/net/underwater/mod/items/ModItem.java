@@ -6,6 +6,8 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.underwater.mod.Reference;
 import net.underwater.mod.UnderwaterMod;
@@ -39,5 +41,14 @@ public class ModItem extends Item {
 
 	public static void RegisterArmor(ItemArmor item) {
 		ModItem.items.add(item);		
+	}
+
+	public static NBTTagCompound getNBTData(ItemStack item) {
+		NBTTagCompound data = item.getTagCompound();
+		if (data == null) {
+			data = new NBTTagCompound();
+			item.setTagCompound(data);
+		}
+		return data;
 	}
 }
