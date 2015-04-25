@@ -23,9 +23,6 @@ public class UnderwaterModItems extends Item{
 		scuba_helmet_w_glass = new ScubaHelmetGlassArmor("scubahelmetwglass");
 		scuba_helmet_w_glass_w_glowstone = new ScubaHelmetGlassGlowstoneArmor("scubahelmetwglasswglowstone");
 		scuba_helmet = new ScubaHelmetArmor("scubahelmet");
-		ModItem.RegisterArmor(scuba_helmet);
-		ModItem.RegisterArmor(scuba_helmet_w_glass);
-		ModItem.RegisterArmor(scuba_helmet_w_glass_w_glowstone);
 	}
 	
 	public static void registerRenders() {
