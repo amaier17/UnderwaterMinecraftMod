@@ -3,6 +3,7 @@ package net.underwater.mod;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -12,6 +13,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.underwater.mod.init.UnderwaterModBlocks;
 import net.underwater.mod.init.UnderwaterModItems;
+import net.underwater.mod.player.PlayerTickHandler;
 import net.underwater.mod.proxy.CommonProxy;
 
 
@@ -30,6 +32,7 @@ public class UnderwaterMod {
 		UnderwaterModItems.init();
 		UnderwaterModItems.register();
 		
+		FMLCommonHandler.instance().bus().register(PlayerTickHandler.instance());
 	}
 	
 	@EventHandler
