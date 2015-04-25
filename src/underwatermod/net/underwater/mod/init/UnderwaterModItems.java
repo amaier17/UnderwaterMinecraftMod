@@ -15,6 +15,7 @@ public class UnderwaterModItems extends Item{
 	public static Item copperingot;
 	public static ItemArmor scuba_helmet;
 	public static ItemArmor scuba_helmet_w_glass;
+	public static ItemArmor scuba_helmet_w_glass_w_glowstone;
 	
 	public static void register() {
 		ModItem.registerModItem();
