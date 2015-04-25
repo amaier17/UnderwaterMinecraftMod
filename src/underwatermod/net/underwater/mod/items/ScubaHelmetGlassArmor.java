@@ -1,13 +1,9 @@
 package net.underwater.mod.items;
 
-import java.util.HashMap;
-
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
-import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
@@ -19,15 +15,13 @@ import net.minecraftforge.common.util.EnumHelper;
 import net.underwater.mod.Reference;
 import net.underwater.mod.UnderwaterMod;
 
-public class ScubaHelmetGlassArmor extends ItemArmor implements ISpecialArmor {
+public class ScubaHelmetGlassArmor extends ModItemArmor implements ISpecialArmor {
 	
 	public static ArmorMaterial ArmorMat = EnumHelper.addArmorMaterial("armMat_scubahelmetwglass", Reference.modid + ":scubahelmetwglass", 10, new int[] {1,1,1,1}, 15);
 	
 	public ScubaHelmetGlassArmor(String name) {
 		//armor type 0 is helmet
-		super(ArmorMat, 1, 0);
-		this.setCreativeTab(UnderwaterMod.tab);
-		this.setUnlocalizedName(name);
+		super(name,ArmorMat);
 	}
 	
 	@Override

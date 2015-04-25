@@ -19,15 +19,13 @@ import net.minecraftforge.common.util.EnumHelper;
 import net.underwater.mod.Reference;
 import net.underwater.mod.UnderwaterMod;
 
-public class ScubaHelmetGlassGlowstoneArmor extends ItemArmor implements ISpecialArmor {
+public class ScubaHelmetGlassGlowstoneArmor extends ModItemArmor implements ISpecialArmor {
 	
 	public static ArmorMaterial ArmorMat = EnumHelper.addArmorMaterial("armMat_scubahelmetwglasswglowstone", Reference.modid + ":scubahelmetwglasswglowstone", 10, new int[] {1,1,1,1}, 15);
 	
 	public ScubaHelmetGlassGlowstoneArmor(String name) {
 		//armor type 0 is helmet
-		super(ArmorMat, 1, 0);
-		this.setCreativeTab(UnderwaterMod.tab);
-		this.setUnlocalizedName(name);
+		super(name,ArmorMat);
 	}
 	
 	@Override
