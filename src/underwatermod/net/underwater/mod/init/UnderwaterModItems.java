@@ -6,6 +6,7 @@ import net.underwater.mod.items.ModItem;
 import net.underwater.mod.items.ScubaHelmetArmor;
 import net.underwater.mod.items.ScubaHelmetGlassArmor;
 import net.underwater.mod.items.ScubaHelmetGlassGlowstoneArmor;
+import net.underwater.mod.items.tools.UWPickaxe;
 
 public class UnderwaterModItems extends Item{
 	
@@ -13,6 +14,8 @@ public class UnderwaterModItems extends Item{
 	public static ItemArmor scuba_helmet;
 	public static ItemArmor scuba_helmet_w_glass;
 	public static ItemArmor scuba_helmet_w_glass_w_glowstone;
+	
+	public static Item uw_pickaxe;
 	
 	public static void register() {
 		ModItem.registerModItem();
@@ -23,6 +26,8 @@ public class UnderwaterModItems extends Item{
 		scuba_helmet_w_glass = new ScubaHelmetGlassArmor("scubahelmetwglass");
 		scuba_helmet_w_glass_w_glowstone = new ScubaHelmetGlassGlowstoneArmor("scubahelmetwglasswglowstone");
 		scuba_helmet = new ScubaHelmetArmor("scubahelmet");
+		
+		uw_pickaxe = new UWPickaxe(ToolMaterial.EMERALD, "uwpickaxe");
 	}
 	
 	public static void registerRenders() {

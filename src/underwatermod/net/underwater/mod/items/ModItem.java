@@ -43,6 +43,10 @@ public class ModItem extends Item {
 		ModItem.items.add(item);		
 	}
 
+	public static void RegisterOddItem(Item item) {
+		ModItem.items.add(item);		
+	}
+
 	public static NBTTagCompound getNBTData(ItemStack item) {
 		NBTTagCompound data = item.getTagCompound();
 		if (data == null) {
