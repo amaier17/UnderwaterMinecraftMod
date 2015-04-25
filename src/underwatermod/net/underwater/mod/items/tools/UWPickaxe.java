@@ -26,7 +26,7 @@ public class UWPickaxe extends ItemPickaxe {
 	public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
     {
 		if (isSelected) {
-			if (entityIn.isInWater()) {
+			if (entityIn.isInsideOfMaterial(Material.water)) {
 				this.digModifier = 5;
 			} else {
 				this.digModifier = 1;				
