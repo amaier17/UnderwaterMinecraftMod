@@ -52,11 +52,9 @@ public class ModItemWetHelmet extends ItemArmor implements PlayerTickHandler.IPl
 	}
 	
 	public void onArmorEquipt(World world, EntityPlayer player, ItemStack armor) {
-		System.out.println("Armor Equipt");
 	}
 	
 	public void onArmorRemoved(World world, EntityPlayer player, ItemStack armor) {
-		System.out.println("Armor Removed");
 	}
 
 	private ItemStack lastArmor = null;

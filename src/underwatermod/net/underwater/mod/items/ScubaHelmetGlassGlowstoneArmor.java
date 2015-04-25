@@ -65,4 +65,9 @@ public class ScubaHelmetGlassGlowstoneArmor extends ModItemWetHelmet implements 
 	public void onWaterEnter(World world, EntityPlayer player, ItemStack armor) {
 		player.addPotionEffect(new PotionEffect(Potion.waterBreathing.id, 2400, 4));
 	}
+	
+	@Override
+	public void onArmorRemoved(World world, EntityPlayer player, ItemStack armor) {
+		player.removePotionEffect(Potion.waterBreathing.id);
+	}
 }
