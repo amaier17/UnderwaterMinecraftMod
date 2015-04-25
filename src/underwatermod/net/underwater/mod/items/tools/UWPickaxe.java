@@ -1,14 +1,9 @@
 package net.underwater.mod.items.tools;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import net.minecraft.block.Block;
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockPos;
@@ -47,7 +42,7 @@ public class UWPickaxe extends ItemPickaxe {
 	@Override
 	public boolean onBlockDestroyed(ItemStack stack, World worldIn, Block blockIn, BlockPos pos, EntityLivingBase playerIn)
     {
-		if(!playerIn.isInWater()){
+		if(!playerIn.isInsideOfMaterial(Material.water)){
 			stack.damageItem(150, playerIn);
 		}
         return false;
