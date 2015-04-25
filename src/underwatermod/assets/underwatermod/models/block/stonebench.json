@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "particle": "underwaterMod:blocks/stone_bench_front",
+        "down": "blocks/stone",
+        "up": "underwaterMod:blocks/stone_bench_top",
+        "north": "underwaterMod:blocks/stone_bench_front",
+        "east": "underwaterMod:blocks/stone_bench_side",
+        "south": "underwaterMod:blocks/stone_bench_side",
+        "west": "underwaterMod:blocks/stone_bench_front"
+    }
+}
