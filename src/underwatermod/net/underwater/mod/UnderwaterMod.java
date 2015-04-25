@@ -39,6 +39,8 @@ public class UnderwaterMod {
 		// All of the crafting recipes here
 		GameRegistry.addRecipe(new ItemStack(UnderwaterModItems.scuba_helmet), new Object[]{"S", "B", 'B', Items.bucket, 'S', Items.string});
 		GameRegistry.addRecipe(new ItemStack(UnderwaterModItems.scuba_helmet_w_glass), new Object[]{"S", "G", "B", 'G', Blocks.glass_pane, 'B', Items.bucket, 'S', Items.string});
+		//GameRegistry.addRecipe(new ItemStack(UnderwaterModItems.scuba_helmet_w_glass_w_glowstone), new Object[]{"S", "G", "B", 'G', Blocks.glass_pane, 'B', Items.bucket, 'S', Items.string});
+		
 		
 	}
 	

@@ -1,14 +1,11 @@
 package net.underwater.mod.init;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.underwater.mod.Reference;
-import net.underwater.mod.items.ScubaHelmetArmor;
 import net.underwater.mod.items.ModItem;
+import net.underwater.mod.items.ScubaHelmetArmor;
 import net.underwater.mod.items.ScubaHelmetGlassArmor;
+import net.underwater.mod.items.ScubaHelmetGlassGlowstoneArmor;
 
 public class UnderwaterModItems extends Item{
 	
@@ -24,9 +21,11 @@ public class UnderwaterModItems extends Item{
 	public static void init() {
 		copperingot = new ModItem("copperingot");
 		scuba_helmet_w_glass = new ScubaHelmetGlassArmor("scubahelmetwglass");
+		scuba_helmet_w_glass_w_glowstone = new ScubaHelmetGlassGlowstoneArmor("scubahelmetwglasswglowstone");
 		scuba_helmet = new ScubaHelmetArmor("scubahelmet");
 		ModItem.RegisterArmor(scuba_helmet);
 		ModItem.RegisterArmor(scuba_helmet_w_glass);
+		ModItem.RegisterArmor(scuba_helmet_w_glass_w_glowstone);
 	}
 	
 	public static void registerRenders() {
