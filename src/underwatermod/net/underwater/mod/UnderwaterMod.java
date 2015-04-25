@@ -39,12 +39,6 @@ public class UnderwaterMod {
 	public void Init(FMLInitializationEvent event) {
 		proxy.registerRenders();
 		
-		// All of the crafting recipes here
-		GameRegistry.addRecipe(new ItemStack(UnderwaterModItems.scuba_helmet), new Object[]{" S ", " B ", 'B', Items.bucket, 'S', Items.string});
-		GameRegistry.addRecipe(new ItemStack(UnderwaterModItems.scuba_helmet_w_glass), new Object[]{" S ", " B ", " G ", 'G', Blocks.glass_pane, 'B', Items.bucket, 'S', Items.string});
-		GameRegistry.addRecipe(new ItemStack(UnderwaterModItems.scuba_helmet_w_glass_w_glowstone), new Object[]{" S ", "LBL", " G ", 'L', Items.glowstone_dust, 'G', Blocks.glass_pane, 'B', Items.bucket, 'S', Items.string});
-		GameRegistry.addRecipe(new ItemStack(UnderwaterModItems.scuba_helmet_w_glass_w_glowstone), new Object[]{"LBL", "   ", "   ", 'L', Items.glowstone_dust, 'B', UnderwaterModItems.scuba_helmet_w_glass});
-		
 		
 	}
 	
