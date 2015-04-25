@@ -17,8 +17,7 @@ public class UnderwaterModItems extends Item{
 	public static Item copperingot;
 	public static ItemArmor scuba_helmet;
 	public static ItemArmor scuba_helmet_w_glass;
-	public static ItemArmor scuba_helmet_w_glass_w_glowstone;
-	
+	public static ItemArmor scuba_helmet_w_glass_w_glowstone;	
 	public static Item uw_pickaxe;
 	
 	public static void register() {
@@ -43,6 +42,7 @@ public class UnderwaterModItems extends Item{
 		GameRegistry.addRecipe(new ItemStack(UnderwaterModItems.scuba_helmet_w_glass), new Object[]{" S ", " B ", " G ", 'G', Blocks.glass_pane, 'B', Items.bucket, 'S', Items.string});
 		GameRegistry.addRecipe(new ItemStack(UnderwaterModItems.scuba_helmet_w_glass_w_glowstone), new Object[]{" S ", "LBL", " G ", 'L', Items.glowstone_dust, 'G', Blocks.glass_pane, 'B', Items.bucket, 'S', Items.string});
 		GameRegistry.addRecipe(new ItemStack(UnderwaterModItems.scuba_helmet_w_glass_w_glowstone), new Object[]{"LBL", "   ", "   ", 'L', Items.glowstone_dust, 'B', UnderwaterModItems.scuba_helmet_w_glass});
+		GameRegistry.addRecipe(new ItemStack(UnderwaterModItems.uw_pickaxe), new Object[]{"LBL", "   ", "   ", 'L', Items.glowstone_dust, 'B', UnderwaterModItems.uw_pickaxe});
 		
 	}
 	

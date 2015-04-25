@@ -3,12 +3,15 @@ package net.underwater.mod.items.tools;
 import java.util.HashMap;
 import java.util.Map;
 
+import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
 import net.underwater.mod.UnderwaterMod;
 import net.underwater.mod.items.ModItem;
@@ -31,7 +34,7 @@ public class UWPickaxe extends ItemPickaxe {
 			if (entityIn.isInWater()) {
 				this.digModifier = 5;
 			} else {
-				this.digModifier = 1;
+				this.digModifier = 1;				
 			}
 		}
     }
@@ -40,5 +43,14 @@ public class UWPickaxe extends ItemPickaxe {
 	public float getDigSpeed(ItemStack itemstack, net.minecraft.block.state.IBlockState state) {
 		return super.getDigSpeed(itemstack, state) * this.digModifier;
 	}
+	
+	@Override
+	public boolean onBlockDestroyed(ItemStack stack, World worldIn, Block blockIn, BlockPos pos, EntityLivingBase playerIn)
+    {
+		if(!playerIn.isInWater()){
+			stack.damageItem(150, playerIn);
+		}
+        return false;
+    }
 	
 }
