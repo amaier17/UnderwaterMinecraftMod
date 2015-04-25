@@ -12,7 +12,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.underwater.mod.init.UnderwaterModBlocks;
 import net.underwater.mod.init.UnderwaterModItems;
-import net.underwater.mod.player.playerTicks;
 import net.underwater.mod.proxy.CommonProxy;
 
 
@@ -31,7 +30,6 @@ public class UnderwaterMod {
 		UnderwaterModItems.init();
 		UnderwaterModItems.register();
 		
-		playerTicks.init();
 	}
 	
 	@EventHandler
