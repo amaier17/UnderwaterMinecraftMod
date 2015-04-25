@@ -2,6 +2,7 @@ item.copperingot.name=Copper Ingot
 item.scubahelmet.name=Scuba Helmet
 item.scubahelmetwglass.name=Scuba Helmet With Glass Pane
 item.scubahelmetwglasswglowstone.name=Scuba Helmet With Glass and Glowstone
+item.uwpickaxe.name=Underwater Pickaxe
 
 tile.copperblock.name=Copper Block
 itemGroup.tabUnderwater=Under Water Stuffs
