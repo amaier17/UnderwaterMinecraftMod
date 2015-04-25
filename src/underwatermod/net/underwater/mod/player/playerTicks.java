@@ -41,7 +41,7 @@ public class playerTicks {
 				IBlockState block = player.worldObj.getBlockState(new BlockPos(x, y, z));
 				String name = block.getBlock().getUnlocalizedName();
 				
-				//player.addChatMessage(new ChatComponentTranslation("Block:" + name));
+				player.addChatMessage(new ChatComponentTranslation("Block:" + name));
 				lastX = x;
 				lastY = y;
 				lastZ = z;
